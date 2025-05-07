@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reena's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+
+  <body>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Back to Top Button -->
+    <a href="#Home" class="back-to-top" id="backToTop"
+      ><i class="fas fa-arrow-up"></i
+    ></a>
+
+    <section class="Home" id="Home"></section>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">Reena<span>.</span></div>
+          <ul id="sideMenu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p class="role">Frontend Enthusiast</p>
+          <h1>
+            Hi, I'm <span>Reena</span><br />I Turn Ideas Into <br />Interactive
+            Web <br />Experiences
+          </h1>
+        </div>
+        <div class="header-image">
+          <img src="./assests/Designer girl-bro.png" alt="Reena's Photo" />
+        </div>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./assests/girl on graduation-rafiki.png" alt="About Me" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+              I'm a passionate Software Engineer with a strong foundation in developing efficient,
+               scalable,and user-centric applications. I enjoy solving complex problems through 
+               clean code and innovative solutions, and I'm dedicated to building high-quality
+                software that delivers real-world impact.
+
+
+            </p>
+            <div class="tab-title">
+              <a href="#Skils" data-tab="Skils" class="tab-links active-link"
+                >Skills</a
+              >
+              <a href="#Exprience" data-tab="Experience" class="tab-links"
+                >Experience</a
+              >
+              <a href="#Education" data-tab="Education" class="tab-links"
+                >Education</a
+              >
+            </div>
+            <div class="tab-content active-link" id="Skils">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />HTML, CSS, JavaScript,
+                  React
+                </li>
+                <li>
+                  <span>Backend Development</span><br />Node.js, Express,
+                  MongoDB
+                </li>
+                <li>
+                  <span>Programming Language</span><br />Core Java,Basic C
+                  Programming
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Exprience">
+              <ul>
+                <li>
+                  <span>2025 - current</span><br />Undergoing full-stack web
+                  development training at Grass Solution Pvt Ltd.
+                </li>
+                <li>
+                  <span>2025 - Jan</span><br />I volunteered at the FFDG event
+                </li>
+                <li>
+                  <span>2024</span><br />I participated in both the GDG and
+                  Anveshana hackathons, each lasting 36 hours.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Education">
+              <ul>
+                <li>
+                  <span>2022 - 2026</span><br />Pursuing a B.E. in Computer
+                  Engineering at GEC Rajkot
+                </li>
+                <li>
+                  <span>2020-2022</span><br />I completed my HSC Board in the
+                  science stream under GSEB at Shah HD High School with a
+                  percentage of 72
+                </li>
+                <li>
+                  <span>2020-2021</span><br />I completed my SSC at Madhuram
+                  Vidhyalaya, Una, with a percentage of 74
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Custom Web Design</h2>
+            <p>
+              Create beautiful, functional websites tailored to your brand and
+              business needs with responsive design for all devices.
+            </p>
+          </div>
+          <div>
+            <h2>E-commerce Website</h2>
+            <p>
+              Build online stores with secure payment gateways, product
+              management, and seamless shopping experiences.
+            </p>
+          </div>
+          <div>
+            <h2>Responsive Design</h2>
+            <p>
+              Ensure your website looks and works perfectly on all devices from
+              desktops to smartphones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./assests/Ecommerce web page-pana.png" alt="Real-estate Website" />
+            <div class="layer">
+              <h3>Real-estate Website(ongoing)</h3>
+              <p>
+                The website connects buyers and brokers to post, sell, and buy
+                properties.
+              </p>
+              <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript,PHP,SQL</p>
+              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assests/Chat bot-pana.png" alt="chatBot" />
+            <div class="layer">
+              <br /><br />
+              <h3>Responsive Chatbot UI using React
+              </h3>
+              <p> 
+                It features a toggleable popup window, smooth transitions,  a chat log for user and bot messages, and mobile-friendly 
+                design using media queries. The project emphasizes clean UI, 
+                accessibility, and modular code.
+
+
+              </p>
+              <p><strong>Tech Stack:</strong> HTML, CSS, React.Js</p>
+
+              <a href="https://github.com/220200107124"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assests/User research-bro.png" alt="Student Hub Website" />
+            <div class="layer">
+              <h3>Student Hub Website</h3>
+              <p>
+                The website connects students and professionals and displays new
+                events.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> HTML, CSS,
+                JavaScript,PHP,DataBase(Sql)
+              </p>
+              <a href="https://github.com/220200107124"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assests/Online wishes list-amico.png" alt="Ecommerce Website" />
+            <div class="layer">
+              <h3>Indicart E-commerce Website(ongoing)</h3>
+              <p>
+                Indicart is a responsive and user-centric e-commerce platform
+                designed to provide a smooth online shopping experience. It
+                features product is a shopping cart, and a dummy checkout
+                process.
+              </p>
+              <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="https://github.com/220200107124">See More</a>
+      </div>
+    </section>
+    <!-- contact section -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <div class="sub-title">Contact Me</div>
+            <p><i class="fa-solid fa-paper-plane"></i>reenatanchak@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>91xxxxx405</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/reena-tanchak-2aa167259"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/220200107124"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="contact-buttons">
+              <a
+              href="./assests/FullStack_Reena@.pdf"
+              download
+              class="btn btn2"
+            >
+              Download CV
+            </a>
+            
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="#" method="POST">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input :mailto
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          ©2025 Reena. All rights reserved <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </section>
+
+    <script>
+      // Mobile Menu Toggle
+      function openMenu() {
+        document.getElementById("sideMenu").style.right = "0";
+      }
+
+      function closeMenu() {
+        document.getElementById("sideMenu").style.right = "-200px";
+      }
+
+      // Tab Content Switching
+      const tabLinks = document.getElementsByClassName("tab-links");
+      const tabContents = document.getElementsByClassName("tab-content");
+
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.style.display = "none";
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).style.display = "block";
+      }
+
+      // Scroll Indicator
+      window.onscroll = function () {
+        updateScrollIndicator();
+        toggleBackToTop();
+        animateSections();
+      };
+
+      function updateScrollIndicator() {
+        const winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById("scrollIndicator").style.width = scrolled + "%";
+      }
+
+      // Back to Top Button
+      function toggleBackToTop() {
+        const backToTop = document.getElementById("backToTop");
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          backToTop.classList.add("active");
+        } else {
+          backToTop.classList.remove("active");
+        }
+      }
+
+      // Section Animation on Scroll
+      function animateSections() {
+        const sections = document.querySelectorAll("section");
+
+        sections.forEach((section) => {
+          const sectionTop = section.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (sectionTop < windowHeight - 100) {
+            section.classList.add("show");
+          }
+        });
+      }
+
+      // Initialize sections to animate when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        animateSections();
+
+        // Set active tab on page load
+        document.getElementById("Skils").style.display = "block";
+      });
+
+      // Smooth scrolling for all links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+
+          // Close mobile menu if open
+          if (window.innerWidth <= 768) {
+            closeMenu();
+          }
+        });
+      });
+    </script>
+    <script src="tab.js"></script>
+  </body>
+</html>
